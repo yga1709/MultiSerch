@@ -3,9 +3,10 @@
   "description": "複数検索エンジンでの同時検索が可能です。",
   "version": "1.0",
   "manifest_version": 2,
-  "permissions": ["tabs", "https://*/*"],
+  "permissions": ["tabs", "https://*/*", "storage"],
   "browser_action": {
     "default_popup": "popup/main.html",
     "default_icon": "icon.png"
-  }
+  },
+  "options_page": "options.html"
 }
