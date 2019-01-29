@@ -8,7 +8,7 @@ document.getElementById("save").onclick = () => {
   if (sitesArray.length == sitesUrl.length) {
     //カンマ区切りのサイトを1件ずつ登録
     for (let i = 0; i < sitesArray.length; i++) {
-      setData[`custom${i}`] = { name: sitesArray[i], url: sitesUrl[i] };
+      setData[sitesArray[i]] = { name: sitesArray[i], url: sitesUrl[i] };
     }
   } else {
     console.log("error");
